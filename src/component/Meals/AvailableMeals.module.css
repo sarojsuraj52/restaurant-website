@@ -22,15 +22,3 @@
       transform: translateY(0);
     }
   }
-  h4{
-    margin: 0;
-  }
-  .card{
-    padding: 1.5rem;
-    max-width: 90%;
-    margin: auto;
-  }
-  .redText {
-    color: red;
-    font-weight: bold;
-  }
