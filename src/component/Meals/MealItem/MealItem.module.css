@@ -15,6 +15,6 @@ h4{
       justify-content: space-between;
       margin: 1rem 0;
   }
-  li{
+  .container li{
       border-bottom: 1px solid #ccc;
   }
