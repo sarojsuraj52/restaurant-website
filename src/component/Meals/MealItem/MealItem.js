@@ -5,10 +5,10 @@ const MealItem = (props) => {
   return (
     <li className={classes.container}>
       <div>
-        <h4>{props.meal.name}</h4>
-        <i>{props.meal.description}</i>
+        <h4>{props.name}</h4>
+        <i>{props.description}</i>
         <div className={classes.redText}>
-          {`$${props.meal.price.toFixed(2)}`}
+          {`$${props.price.toFixed(2)}`}
         </div>
       </div>
       <div>

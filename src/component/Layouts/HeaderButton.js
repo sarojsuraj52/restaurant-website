@@ -5,11 +5,7 @@ import CartIcon from "../Cart/CartIcon";
 const HeaderButton = (props) => {
   const cartctx = useContext(CartContext)
 
-  let quantity = 0;
-  cartctx.items.map(item=>{
-    return quantity += Number(item.quantity)
-  })
-
+  let quantity = cartctx.items.length
 
   return (
     <button className={classes.button} onClick={props.onClick}>
