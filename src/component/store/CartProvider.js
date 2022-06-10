@@ -11,11 +11,7 @@ const CartProvider = (props) => {
     newItems.forEach((element) => {
       if (element.id === item.id) {
         isItemAdded = true;
-        console.log('Quantity',quantity)
         element.quantity = Number(element.quantity) + Number(quantity);
-
-        // element.quantity = Number(element.quantity) + Number(quantity) ;
-
       }
     });
 
@@ -49,7 +45,6 @@ const CartProvider = (props) => {
      }
      
     }
-    // console.log('item quantity', item.quantity)
   };
 
   items.map((item) => {
@@ -65,7 +60,6 @@ const CartProvider = (props) => {
 
   return (
     <CartContext.Provider value={cartContextHelper}>
-      {console.log("Context Provider", cartContextHelper.items)}
       {props.children}
     </CartContext.Provider>
   );
